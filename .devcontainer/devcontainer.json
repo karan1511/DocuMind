@@ -1,0 +1,28 @@
+{
+  "name": "DocuMind Dev",
+  "dockerComposeFile": [
+    "docker-compose.yaml"
+  ],
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "uv sync",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "PKief.material-icon-theme",
+        "hkeric.theme-anysphere"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Anysphere",
+        "workbench.iconTheme": "material-icon-theme",
+        "python.pythonPath": "/workspace/.venv/bin/python",
+        "python.terminal.activateEnvironment": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
