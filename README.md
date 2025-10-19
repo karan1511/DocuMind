@@ -45,7 +45,7 @@ The UI will be available at http://localhost:8501 by default.
 
 ---
 Ensure MongoDB, Redis, and Qdrant are running and accessible as configured in your `.env` file.
-# RAG-based PDF QA Agent
+# RAG-based Document Analyser Agent
 
 A Retrieval-Augmented Generation (RAG) agent that answers questions using content retrieved from PDF files.  
 The assistant only uses the provided context (`page_contents` + `page_number`) and always points to the correct page for reference.
